@@ -1,0 +1,1640 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>SB Admin - Start Bootstrap Template</title>
+  <!-- Bootstrap core CSS-->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom fonts for this template-->
+  <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <!-- Page level plugin CSS-->
+  <link href="vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
+  <!-- Custom styles for this template-->
+  <link href="css/sb-admin.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+
+<body class="fixed-nav sticky-footer bg-dark" id="page-top">
+  <!-- Navigation-->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+    <a class="navbar-brand" href="Admin.html">Menú</a>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav navbar-sidenav" id="exampleAccordion">
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Dashboard">
+          <a class="nav-link" href="Admin.html">
+            <i class="fa fa-fw fa-dashboard"></i>
+            <span class="nav-link-text">Resumen</span>
+          </a>
+        </li>
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Charts">
+          <a class="nav-link" href="Minegocio.html">
+            <i class="fa fa-fw fa-area-chart"></i>
+            <span class="nav-link-text">Mi Negocio</span>
+          </a>
+        </li>
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
+          <a class="nav-link" href="Clientes.html">
+            <i class="fa fa-fw fa-table"></i>
+            <span class="nav-link-text">Clientes</span>
+          </a>
+        </li>
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Components">
+          <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseComponents" data-parent="#exampleAccordion">
+            <i class="fa fa-fw fa-wrench"></i>
+            <span class="nav-link-text">Distribuidoras</span>
+          </a>
+          <ul class="sidenav-second-level collapse" id="collapseComponents">
+            <li>
+              <a href="listadistribuidores.html">Lista Distribuidoras</a>
+            </li>
+            <li>
+              <a href="cards.html">Cards</a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Example Pages">
+          <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseExamplePages" data-parent="#exampleAccordion">
+            <i class="fa fa-fw fa-file"></i>
+            <span class="nav-link-text">Example Pages</span>
+          </a>
+          <ul class="sidenav-second-level collapse" id="collapseExamplePages">
+            <li>
+              <a href="login.html">Login Page</a>
+            </li>
+            <li>
+              <a href="register.html">Registration Page</a>
+            </li>
+            <li>
+              <a href="forgot-password.html">Forgot Password Page</a>
+            </li>
+            <li>
+              <a href="blank.html">Blank Page</a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Menu Levels">
+          <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseMulti" data-parent="#exampleAccordion">
+            <i class="fa fa-fw fa-sitemap"></i>
+            <span class="nav-link-text">Menu Levels</span>
+          </a>
+          <ul class="sidenav-second-level collapse" id="collapseMulti">
+            <li>
+              <a href="#">Second Level Item</a>
+            </li>
+            <li>
+              <a href="#">Second Level Item</a>
+            </li>
+            <li>
+              <a href="#">Second Level Item</a>
+            </li>
+            <li>
+              <a class="nav-link-collapse collapsed" data-toggle="collapse" href="#collapseMulti2">Third Level</a>
+              <ul class="sidenav-third-level collapse" id="collapseMulti2">
+                <li>
+                  <a href="#">Third Level Item</a>
+                </li>
+                <li>
+                  <a href="#">Third Level Item</a>
+                </li>
+                <li>
+                  <a href="#">Third Level Item</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Link">
+          <a class="nav-link" href="#">
+            <i class="fa fa-fw fa-link"></i>
+            <span class="nav-link-text">Link</span>
+          </a>
+        </li>
+      </ul>
+      <ul class="navbar-nav sidenav-toggler">
+        <li class="nav-item">
+          <a class="nav-link text-center" id="sidenavToggler">
+            <i class="fa fa-fw fa-angle-left"></i>
+          </a>
+        </li>
+      </ul>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle mr-lg-2" id="messagesDropdown" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-fw fa-envelope"></i>
+            <span class="d-lg-none">Messages
+              <span class="badge badge-pill badge-primary">12 New</span>
+            </span>
+            <span class="indicator text-primary d-none d-lg-block">
+              <i class="fa fa-fw fa-circle"></i>
+            </span>
+          </a>
+          <div class="dropdown-menu" aria-labelledby="messagesDropdown">
+            <h6 class="dropdown-header">New Messages:</h6>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">
+              <strong>David Miller</strong>
+              <span class="small float-right text-muted">11:21 AM</span>
+              <div class="dropdown-message small">Hey there! This new version of SB Admin is pretty awesome! These messages clip off when they reach the end of the box so they don't overflow over to the sides!</div>
+            </a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">
+              <strong>Jane Smith</strong>
+              <span class="small float-right text-muted">11:21 AM</span>
+              <div class="dropdown-message small">I was wondering if you could meet for an appointment at 3:00 instead of 4:00. Thanks!</div>
+            </a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">
+              <strong>John Doe</strong>
+              <span class="small float-right text-muted">11:21 AM</span>
+              <div class="dropdown-message small">I've sent the final files over to you for review. When you're able to sign off of them let me know and we can discuss distribution.</div>
+            </a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item small" href="#">View all messages</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle mr-lg-2" id="alertsDropdown" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-fw fa-bell"></i>
+            <span class="d-lg-none">Alerts
+              <span class="badge badge-pill badge-warning">6 New</span>
+            </span>
+            <span class="indicator text-warning d-none d-lg-block">
+              <i class="fa fa-fw fa-circle"></i>
+            </span>
+          </a>
+          <div class="dropdown-menu" aria-labelledby="alertsDropdown">
+            <h6 class="dropdown-header">New Alerts:</h6>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">
+              <span class="text-success">
+                <strong>
+                  <i class="fa fa-long-arrow-up fa-fw"></i>Status Update</strong>
+              </span>
+              <span class="small float-right text-muted">11:21 AM</span>
+              <div class="dropdown-message small">This is an automated server response message. All systems are online.</div>
+            </a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">
+              <span class="text-danger">
+                <strong>
+                  <i class="fa fa-long-arrow-down fa-fw"></i>Status Update</strong>
+              </span>
+              <span class="small float-right text-muted">11:21 AM</span>
+              <div class="dropdown-message small">This is an automated server response message. All systems are online.</div>
+            </a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">
+              <span class="text-success">
+                <strong>
+                  <i class="fa fa-long-arrow-up fa-fw"></i>Status Update</strong>
+              </span>
+              <span class="small float-right text-muted">11:21 AM</span>
+              <div class="dropdown-message small">This is an automated server response message. All systems are online.</div>
+            </a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item small" href="#">View all alerts</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <form class="form-inline my-2 my-lg-0 mr-lg-2">
+            <div class="input-group">
+              <input class="form-control" type="text" placeholder="Search for...">
+              <span class="input-group-btn">
+                <button class="btn btn-primary" type="button">
+                  <i class="fa fa-search"></i>
+                </button>
+              </span>
+            </div>
+          </form>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="modal" data-target="#exampleModal">
+            <i class="fa fa-fw fa-sign-out"></i>Logout</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="content-wrapper">
+    <div class="container-fluid">
+      <!-- Breadcrumbs-->
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+          <a href="#">Dashboard</a>
+        </li>
+        <li class="breadcrumb-item active">Tables</li>
+      </ol>
+      <!-- Example DataTables Card-->
+      <div class="card mb-3">
+        <div class="card-header">
+          <i class="fa fa-table"></i> Data Table Example</div>
+        <div class="card-body">
+          <div class="table-responsive">
+            <button type="button"    class="btn btn-primary waves-effect waves-light add float-right glyphicon glyphicon-plus-sign" style="    margin: 1px 15px;" onclick="if (!window.__cfRLUnblockHandlers) return false; add_row();">Añadir</button>
+            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+              <thead>
+                <tr>
+                  <th>ID</th>
+                  <th>Nombre</th>
+                  <th>Nº de dispositivos</th>
+                  <th>Estado</th>
+                  <th>Localización</th>
+                  <th>Distribuidor</th>
+                  <th>CIF</th>
+                  <th>Opciones</th>
+                </tr>
+              </thead>
+              <tfoot>
+                <tr>
+                  <th>ID</th>
+                  <th>Nombre</th>
+                  <th>Nº de dispositivos</th>
+                  <th>Estado</th>
+                  <th>Localización</th>
+                  <th>Distribuidor</th>
+                  <th>CIF</th>
+                  <th>Opciones</th>
+                  
+                  
+                </tr>
+              </tfoot>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Perez Oso</td>
+                  <td>9</td>
+                  <td>61</td>
+                  <td>Madrid</td>
+                  <td>$320,800</td>
+                  <td>0323598</td>
+                  <td>
+     
+     <a href="#" class="btn-group btn-group-sm">
+        <span class="glyphicon glyphicon-edit" aria-hidden="true"></span>
+        <span><strong>Edit</strong></span>            
+     </a>
+     <a href="#" class="btn btn-primary a-btn-slide-text">
+        <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>
+        <span><strong>View</strong></span>            
+     </a>
+     <a href="#" class="btn btn-primary a-btn-slide-text">
+       <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+        <span><strong>Delete</strong></span>            
+     </a> 
+                  </td>
+
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>1</td>
+                  <td>Tokyo</td>
+                  <td>63</td>
+                  <td>París</td>
+                  <td>$170,750</td>
+                  <td>$170,750</td>
+                  <td>
+                                 
+     <a href="#" class="btn btn-primary a-btn-slide-text">
+        <span class="glyphicon glyphicon-edit" ></span>
+        <span><strong>Edit</strong></span>            
+     </a>
+     <a href="#" class="btn btn-primary a-btn-slide-text">
+        <span class="glyphicon glyphicon-eye-open" ></span>
+        <span><strong>View</strong></span>            
+     </a>
+     <a href="#" class="btn btn-primary a-btn-slide-text">
+       <span class="glyphicon glyphicon-remove" ></span>
+        <span><strong>Delete</strong></span>            
+     </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Saúl</td>
+                  <td>1</td>
+                  <td>66</td>
+                  <td>Turín</td>
+                  <td>$86,000</td>
+                  <td>$170,750</td>
+                  <td>
+     <a href="#" class="btn btn-primary a-btn-slide-text">
+        <span class="glyphicon glyphicon-edit" ></span>
+        <span><strong>Edit</strong></span>            
+     </a>
+     <a href="#" class="btn btn-primary a-btn-slide-text">
+        <span class="glyphicon glyphicon-eye-open" ></span>
+        <span><strong>View</strong></span>            
+     </a>
+     <a href="#" class="btn btn-primary a-btn-slide-text">
+       <span class="glyphicon glyphicon-remove" ></span>
+        <span><strong>Delete</strong></span>            
+     </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>Ned Stark</td>
+                  <td>1</td>
+                  <td>22</td>
+                  <td>AltoJardín</td>
+                  <td>$433,060</td>
+                  <td>$170,750</td>
+                  <td>           
+                                                        
+     <a href="#" class="btn btn-primary a-btn-slide-text">
+        <span class="glyphicon glyphicon-edit" aria-hidden="true"></span>
+        <span><strong>Edit</strong></span>            
+     </a>
+     <a href="#" class="btn btn-primary a-btn-slide-text">
+        <span class="glyphicon glyphicon-eye-open" ></span>
+        <span><strong>View</strong></span>            
+     </a>
+     <a href="#" class="btn btn-primary a-btn-slide-text">
+       <span class="glyphicon glyphicon-remove" ></span>
+        <span><strong>Delete</strong></span>            
+     </a>  
+                  </td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Arya Stark</td>
+                  <td>0</td>
+                  <td>33</td>
+                  <td>2008/11/28</td>
+                  <td>$162,700</td>
+                  <td>2254J</td>
+                  <td>
+                    <a href="#" class="btn btn-primary a-btn-slide-text">
+        <span class="glyphicon glyphicon-edit" ></span>
+        <span><strong>Edit</strong></span>            
+     </a>
+     <a href="#" class="btn btn-primary a-btn-slide-text">
+        <span class="glyphicon glyphicon-eye-open" ></span>
+        <span><strong>View</strong></span>            
+     </a>
+     <a href="#" class="btn btn-primary a-btn-slide-text">
+       <span class="glyphicon glyphicon-remove" ></span>
+        <span><strong>Delete</strong></span>            
+     </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>6</td>
+                  <td>Daniel</td>
+                  <td>1</td>
+                  <td>61</td>
+                  <td>Málaga</td>
+                  <td>$372,000</td>
+                  <td>$170,750</td>
+                  <td>
+                    <a href="#" class="btn btn-primary a-btn-slide-text">
+        <span class="glyphicon glyphicon-edit" ></span>
+        <span><strong>Edit</strong></span>            
+     </a>
+     <a href="#" class="btn btn-primary a-btn-slide-text">
+        <span class="glyphicon glyphicon-eye-open" ></span>
+        <span><strong>View</strong></span>            
+     </a>
+     <a href="#" class="btn btn-primary a-btn-slide-text">
+       <span class="glyphicon glyphicon-remove" ></span>
+        <span><strong>Delete</strong></span>            
+     </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>70</td>
+                  <td>Pedro Infante</td>
+                  <td>10</td>
+                  <td>59</td>
+                  <td>Córdoba</td>
+                  <td>$137,500</td>
+                  <td>$170,750</td>
+                  <td>
+                    <a href="#" class="btn btn-primary a-btn-slide-text">
+        <span class="glyphicon glyphicon-edit" ></span>
+        <span><strong>Edit</strong></span>            
+     </a>
+     <a href="#" class="btn btn-primary a-btn-slide-text">
+        <span class="glyphicon glyphicon-eye-open" ></span>
+        <span><strong>View</strong></span>            
+     </a>
+     <a href="#" class="btn btn-primary a-btn-slide-text">
+       <span class="glyphicon glyphicon-remove" ></span>
+        <span><strong>Delete</strong></span>            
+     </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>99</td>
+                  <td>Ronaldo</td>
+                  <td>Tokyo</td>
+                  <td>55</td>
+                  <td>Tokyo</td>
+                  <td>$327,900</td>
+                  <td>33587Q</td>
+                  <td>
+                    <a href="#" class="btn btn-primary a-btn-slide-text">
+        <span class="glyphicon glyphicon-edit" ></span>
+        <span><strong>Edit</strong></span>            
+     </a>
+     <a href="#" class="btn btn-primary a-btn-slide-text">
+        <span class="glyphicon glyphicon-eye-open" ></span>
+        <span><strong>View</strong></span>            
+     </a>
+     <a href="#" class="btn btn-primary a-btn-slide-text">
+       <span class="glyphicon glyphicon-remove" ></span>
+        <span><strong>Delete</strong></span>            
+     </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Alex</td>
+                  <td>5</td>
+                  <td>39</td>
+                  <td>Sevilla</td>
+                  <td>$205,500</td>
+                  <td>14874A</td>
+                  <td>
+                    <a href="#" class="btn btn-primary a-btn-slide-text">
+        <span class="glyphicon glyphicon-edit" ></span>
+        <span><strong>Edit</strong></span>            
+     </a>
+     <a href="#" class="btn btn-primary a-btn-slide-text">
+        <span class="glyphicon glyphicon-eye-open" ></span>
+        <span><strong>View</strong></span>            
+     </a>
+     <a href="#" class="btn btn-primary a-btn-slide-text">
+       <span class="glyphicon glyphicon-remove" ></span>
+        <span><strong>Delete</strong></span>            
+     </a>
+                  </td>
+                </tr>
+       
+                <tr>
+                  <td>4</td>
+                  <td>Software Engineer</td>
+                  <td>Edinburgh</td>
+                  <td>23</td>
+                  <td>2008/12/13</td>
+                  <td>$103,600</td>
+                  <td>$170,750</td>
+                  <td>
+                    <a href="#" class="btn btn-primary a-btn-slide-text">
+        <span class="glyphicon glyphicon-edit" ></span>
+        <span><strong>Edit</strong></span>            
+     </a>
+     <a href="#" class="btn btn-primary a-btn-slide-text">
+        <span class="glyphicon glyphicon-eye-open" ></span>
+        <span><strong>View</strong></span>            
+     </a>
+     <a href="#" class="btn btn-primary a-btn-slide-text">
+       <span class="glyphicon glyphicon-remove" ></span>
+        <span><strong>Delete</strong></span>            
+     </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>Lorena</td>
+                  <td>London</td>
+                  <td>30</td>
+                  <td>Úbeda</td>
+                  <td>HNOS. PEREZ</td>
+                  <td>12544L</td>
+                  <td>
+                    <a href="#" class="btn btn-primary a-btn-slide-text">
+        <span class="glyphicon glyphicon-edit" ></span>
+        <span><strong>Edit</strong></span>            
+     </a>
+     <a href="#" class="btn btn-primary a-btn-slide-text">
+        <span class="glyphicon glyphicon-eye-open" ></span>
+        <span><strong>View</strong></span>            
+     </a>
+     <a href="#" class="btn btn-primary a-btn-slide-text">
+       <span class="glyphicon glyphicon-remove" ></span>
+        <span><strong>Delete</strong></span>            
+     </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>6</td>
+                  <td>Pedro</td>
+                  <td>30</td>
+                  <td>22</td>
+                  <td>2013/03/03</td>
+                  <td>$342,000</td>
+                  <td>5068456l</td>
+                  <td>
+                    <a href="#" class="btn btn-primary a-btn-slide-text">
+        <span class="glyphicon glyphicon-edit" ></span>
+        <span><strong>Edit</strong></span>            
+     </a>
+     <a href="#" class="btn btn-primary a-btn-slide-text">
+        <span class="glyphicon glyphicon-eye-open" ></span>
+        <span><strong>View</strong></span>            
+     </a>
+     <a href="#" class="btn btn-primary a-btn-slide-text">
+       <span class="glyphicon glyphicon-remove" ></span>
+        <span><strong>Delete</strong></span>            
+     </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>8</td>
+                  <td>Paco</td>
+                  <td>2</td>
+                  <td>36</td>
+                  <td>Málaga</td>
+                  <td>$470,600</td>
+                  <td>000xxx1</td>
+                  <td>
+                    <a href="#" class="btn btn-primary a-btn-slide-text">
+        <span class="glyphicon glyphicon-edit" ></span>
+        <span><strong>Edit</strong></span>            
+     </a>
+     <a href="#" class="btn btn-primary a-btn-slide-text">
+        <span class="glyphicon glyphicon-eye-open" ></span>
+        <span><strong>View</strong></span>            
+     </a>
+     <a href="#" class="btn btn-primary a-btn-slide-text">
+       <span class="glyphicon glyphicon-remove" ></span>
+        <span><strong>Delete</strong></span>            
+     </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>9</td>
+                  <td>Laura Cañas</td>
+                  <td>London</td>
+                  <td>43</td>
+                  <td>2012/12/18</td>
+                  <td>$313,500</td>
+                  <td>$170,750</td>
+                  <td>
+                    <a href="#" class="btn btn-primary a-btn-slide-text">
+        <span class="glyphicon glyphicon-edit" ></span>
+        <span><strong>Edit</strong></span>            
+     </a>
+     <a href="#" class="btn btn-primary a-btn-slide-text">
+        <span class="glyphicon glyphicon-eye-open" ></span>
+        <span><strong>View</strong></span>            
+     </a>
+     <a href="#" class="btn btn-primary a-btn-slide-text">
+       <span class="glyphicon glyphicon-remove" ></span>
+        <span><strong>Delete</strong></span>            
+     </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>20</td>
+                  <td>Leo</td>
+                  <td>3</td>
+                  <td>19</td>
+                  <td>Ventas</td>
+                  <td>$385,750</td>
+                  <td>1245S</td>
+                  <td>
+                    <a href="#" class="btn btn-primary a-btn-slide-text">
+        <span class="glyphicon glyphicon-edit" ></span>
+        <span><strong>Edit</strong></span>            
+     </a>
+     <a href="#" class="btn btn-primary a-btn-slide-text">
+        <span class="glyphicon glyphicon-eye-open" ></span>
+        <span><strong>View</strong></span>            
+     </a>
+     <a href="#" class="btn btn-primary a-btn-slide-text">
+       <span class="glyphicon glyphicon-remove" ></span>
+        <span><strong>Delete</strong></span>            
+     </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>88</td>
+                  <td>Diego Godin</td>
+                  <td>3</td>
+                  <td>66</td>
+                  <td>Jaén</td>
+                  <td>ALMANSOR</td>
+                  <td>598444L</td>
+                  <td>
+                    <a href="#" class="btn btn-primary a-btn-slide-text">
+        <span class="glyphicon glyphicon-edit" ></span>
+        <span><strong>Edit</strong></span>            
+     </a>
+     <a href="#" class="btn btn-primary a-btn-slide-text">
+        <span class="glyphicon glyphicon-eye-open" ></span>
+        <span><strong>View</strong></span>            
+     </a>
+     <a href="#" class="btn btn-primary a-btn-slide-text">
+       <span class="glyphicon glyphicon-remove" ></span>
+        <span><strong>Delete</strong></span>            
+     </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>14</td>
+                  <td>Beatriz </td>
+                  <td>5</td>
+                  <td>64</td>
+                  <td>Mijas</td>
+                  <td>$725,000</td>
+                  <td>58777P</td>
+                  <td>
+                    <a href="#" class="btn btn-primary a-btn-slide-text">
+        <span class="glyphicon glyphicon-edit" ></span>
+        <span><strong>Edit</strong></span>            
+     </a>
+     <a href="#" class="btn btn-primary a-btn-slide-text">
+        <span class="glyphicon glyphicon-eye-open" ></span>
+        <span><strong>View</strong></span>            
+     </a>
+     <a href="#" class="btn btn-primary a-btn-slide-text">
+       <span class="glyphicon glyphicon-remove" ></span>
+        <span><strong>Delete</strong></span>            
+     </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>21</td>
+                  <td>Luis Miguel</td>
+                  <td>1</td>
+                  <td>59</td>
+                  <td>Soria</td>
+                  <td>$237,500</td>
+                  <td>j45454</td>
+                  <td>
+                    <a href="#" class="btn btn-primary a-btn-slide-text">
+        <span class="glyphicon glyphicon-edit" ></span>
+        <span><strong>Edit</strong></span>            
+     </a>
+     <a href="#" class="btn btn-primary a-btn-slide-text">
+        <span class="glyphicon glyphicon-eye-open" ></span>
+        <span><strong>View</strong></span>            
+     </a>
+     <a href="#" class="btn btn-primary a-btn-slide-text">
+       <span class="glyphicon glyphicon-remove" ></span>
+        <span><strong>Delete</strong></span>            
+     </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>12</td>
+                  <td>Daniel</td>
+                  <td>6</td>
+                  <td>41</td>
+                  <td>Talavera</td>
+                  <td>REMAR SL</td>
+                  <td>$385,750</td>
+                  <td>
+                    <a href="#" class="btn btn-primary a-btn-slide-text">
+        <span class="glyphicon glyphicon-edit" ></span>
+        <span><strong>Edit</strong></span>            
+     </a>
+     <a href="#" class="btn btn-primary a-btn-slide-text">
+        <span class="glyphicon glyphicon-eye-open" ></span>
+        <span><strong>View</strong></span>            
+     </a>
+     <a href="#" class="btn btn-primary a-btn-slide-text">
+       <span class="glyphicon glyphicon-remove" ></span>
+        <span><strong>Delete</strong></span>            
+     </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>125</td>
+                  <td>Ramón</td>
+                  <td>1</td>
+                  <td>35</td>
+                  <td>Ávila</td>
+                  <td>$217,500</td>
+                  <td>15425A</td>
+                  <td>
+                    <a href="#" class="btn btn-primary a-btn-slide-text">
+        <span class="glyphicon glyphicon-edit" ></span>
+        <span><strong>Edit</strong></span>            
+     </a>
+     <a href="#" class="btn btn-primary a-btn-slide-text">
+        <span class="glyphicon glyphicon-eye-open" ></span>
+        <span><strong>View</strong></span>            
+     </a>
+     <a href="#" class="btn btn-primary a-btn-slide-text">
+       <span class="glyphicon glyphicon-remove" ></span>
+        <span><strong>Delete</strong></span>            
+     </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>33</td>
+                  <td>Mauricio</td>
+                  <td>2</td>
+                  <td>30</td>
+                  <td>Valencia</td>
+                  <td>$345,000</td>
+                  <td>6589A</td>
+                  <td>
+                    <a href="#" class="btn btn-primary a-btn-slide-text">
+        <span class="glyphicon glyphicon-edit" ></span>
+        <span><strong>Edit</strong></span>            
+     </a>
+     <a href="#" class="btn btn-primary a-btn-slide-text">
+        <span class="glyphicon glyphicon-eye-open" ></span>
+        <span><strong>View</strong></span>            
+     </a>
+     <a href="#" class="btn btn-primary a-btn-slide-text">
+       <span class="glyphicon glyphicon-remove" ></span>
+        <span><strong>Delete</strong></span>            
+     </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>21</td>
+                  <td>Lola</td>
+                  <td>9</td>
+                  <td>40</td>
+                  <td>Vicalvaro</td>
+                  <td>PATOS SA</td>
+                  <td>4782A</td>
+                  <td>
+                    <a href="#" class="btn btn-primary a-btn-slide-text">
+        <span class="glyphicon glyphicon-edit" ></span>
+        <span><strong>Edit</strong></span>            
+     </a>
+     <a href="#" class="btn btn-primary a-btn-slide-text">
+        <span class="glyphicon glyphicon-eye-open" ></span>
+        <span><strong>View</strong></span>            
+     </a>
+     <a href="#" class="btn btn-primary a-btn-slide-text">
+       <span class="glyphicon glyphicon-remove" ></span>
+        <span><strong>Delete</strong></span>            
+     </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>458</td>
+                  <td>Sofía</td>
+                  <td>0</td>
+                  <td>21</td>
+                  <td>Lugo</td>
+                  <td>ANCAR SL</td>
+                  <td>6589D</td>
+                  <td>
+                    <a href="#" class="btn btn-primary a-btn-slide-text">
+        <span class="glyphicon glyphicon-edit" ></span>
+        <span><strong>Edit</strong></span>            
+     </a>
+     <a href="#" class="btn btn-primary a-btn-slide-text">
+        <span class="glyphicon glyphicon-eye-open" ></span>
+        <span><strong>View</strong></span>            
+     </a>
+     <a href="#" class="btn btn-primary a-btn-slide-text">
+       <span class="glyphicon glyphicon-remove" ></span>
+        <span><strong>Delete</strong></span>            
+     </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>1478</td>
+                  <td>Machado</td>
+                  <td>6</td>
+                  <td>23</td>
+                  <td>Lugo</td>
+                  <td>ECOTOL SL</td>
+                  <td>cf333</td>
+                  <td>
+                    <a href="#" class="btn btn-primary a-btn-slide-text">
+        <span class="glyphicon glyphicon-edit" ></span>
+        <span><strong>Edit</strong></span>            
+     </a>
+     <a href="#" class="btn btn-primary a-btn-slide-text">
+        <span class="glyphicon glyphicon-eye-open" ></span>
+        <span><strong>View</strong></span>            
+     </a>
+     <a href="#" class="btn btn-primary a-btn-slide-text">
+       <span class="glyphicon glyphicon-remove" ></span>
+        <span><strong>Delete</strong></span>            
+     </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>65</td>
+                  <td>Carolina</td>
+                  <td>41</td>
+                  <td>47</td>
+                  <td>Bilbao</td>
+                  <td>AGROO</td>
+                  <td>121544D</td>
+                  <td>
+                    <a href="#" class="btn btn-primary a-btn-slide-text">
+        <span class="glyphicon glyphicon-edit" ></span>
+        <span><strong>Edit</strong></span>            
+     </a>
+     <a href="#" class="btn btn-primary a-btn-slide-text">
+        <span class="glyphicon glyphicon-eye-open" ></span>
+        <span><strong>View</strong></span>            
+     </a>
+     <a href="#" class="btn btn-primary a-btn-slide-text">
+       <span class="glyphicon glyphicon-remove" ></span>
+        <span><strong>Delete</strong></span>            
+     </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>012</td>
+                  <td>Oscar</td>
+                  <td>6</td>
+                  <td>42</td>
+                  <td>Colonia</td>
+                  <td>ARREA </td>
+                  <td>55454R</td>
+                  <td>
+                    <a href="#" class="btn btn-primary a-btn-slide-text">
+        <span class="glyphicon glyphicon-edit" ></span>
+        <span><strong>Edit</strong></span>            
+     </a>
+     <a href="#" class="btn btn-primary a-btn-slide-text">
+        <span class="glyphicon glyphicon-eye-open" ></span>
+        <span><strong>View</strong></span>            
+     </a>
+     <a href="#" class="btn btn-primary a-btn-slide-text">
+       <span class="glyphicon glyphicon-remove" ></span>
+        <span><strong>Delete</strong></span>            
+     </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>32</td>
+                  <td>Lucas</td>
+                  <td>2</td>
+                  <td>28</td>
+                  <td>Cantabria</td>
+                  <td>JUAN E HIJOS</td>
+                  <td>6954S</td>
+                  <td>
+                    <a href="#" class="btn btn-primary a-btn-slide-text">
+        <span class="glyphicon glyphicon-edit" ></span>
+        <span><strong>Edit</strong></span>            
+     </a>
+     <a href="#" class="btn btn-primary a-btn-slide-text">
+        <span class="glyphicon glyphicon-eye-open" ></span>
+        <span><strong>View</strong></span>            
+     </a>
+     <a href="#" class="btn btn-primary a-btn-slide-text">
+       <span class="glyphicon glyphicon-remove" ></span>
+        <span><strong>Delete</strong></span>            
+     </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>541</td>
+                  <td>Raúl</td>
+                  <td>3</td>
+                  <td>28</td>
+                  <td>Oviedo</td>
+                  <td>$206,850</td>
+                  <td>$109,850</td>
+                  <td>
+                    <a href="#" class="btn btn-primary a-btn-slide-text">
+        <span class="glyphicon glyphicon-edit" ></span>
+        <span><strong>Edit</strong></span>            
+     </a>
+     <a href="#" class="btn btn-primary a-btn-slide-text">
+        <span class="glyphicon glyphicon-eye-open" ></span>
+        <span><strong>View</strong></span>            
+     </a>
+     <a href="#" class="btn btn-primary a-btn-slide-text">
+       <span class="glyphicon glyphicon-remove" ></span>
+        <span><strong>Delete</strong></span>            
+     </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>320</td>
+                  <td>Raúl Prieto</td>
+                  <td>5</td>
+                  <td>48</td>
+                  <td>Torrejón</td>
+                  <td>Generation</td>
+                  <td>22154P</td>
+                  <td>
+                    <a href="#" class="btn btn-primary a-btn-slide-text">
+        <span class="glyphicon glyphicon-edit" ></span>
+        <span><strong>Edit</strong></span>            
+     </a>
+     <a href="#" class="btn btn-primary a-btn-slide-text">
+        <span class="glyphicon glyphicon-eye-open" ></span>
+        <span><strong>View</strong></span>            
+     </a>
+     <a href="#" class="btn btn-primary a-btn-slide-text">
+       <span class="glyphicon glyphicon-remove" ></span>
+        <span><strong>Delete</strong></span>            
+     </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>4545</td>
+                  <td>David </td>
+                  <td>Tokyo</td>
+                  <td>20</td>
+                  <td>Lisboa</td>
+                  <td>$163,000</td>
+                  <td>54122A</td>
+                  <td>
+                    <a href="#" class="btn btn-primary a-btn-slide-text">
+        <span class="glyphicon glyphicon-edit" ></span>
+        <span><strong>Edit</strong></span>            
+     </a>
+     <a href="#" class="btn btn-primary a-btn-slide-text">
+        <span class="glyphicon glyphicon-eye-open" ></span>
+        <span><strong>View</strong></span>            
+     </a>
+     <a href="#" class="btn btn-primary a-btn-slide-text">
+       <span class="glyphicon glyphicon-remove" ></span>
+        <span><strong>Delete</strong></span>            
+     </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>665</td>
+                  <td>Wilson</td>
+                  <td>4</td>
+                  <td>37</td>
+                  <td>Getafe</td>
+                  <td>$95,400</td>
+                  <td>545454P</td>
+                  <td>
+                    <a href="#" class="btn btn-primary a-btn-slide-text">
+        <span class="glyphicon glyphicon-edit" ></span>
+        <span><strong>Edit</strong></span>            
+     </a>
+     <a href="#" class="btn btn-primary a-btn-slide-text">
+        <span class="glyphicon glyphicon-eye-open" ></span>
+        <span><strong>View</strong></span>            
+     </a>
+     <a href="#" class="btn btn-primary a-btn-slide-text">
+       <span class="glyphicon glyphicon-remove" ></span>
+        <span><strong>Delete</strong></span>            
+     </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>25</td>
+                  <td>Miguel</td>
+                  <td>5</td>
+                  <td>53</td>
+                  <td>Ibiza</td>
+                  <td>David e Hijos</td>
+                  <td>12155S</td>
+                  <td>
+                    <a href="#" class="btn btn-primary a-btn-slide-text">
+        <span class="glyphicon glyphicon-edit" ></span>
+        <span><strong>Edit</strong></span>            
+     </a>
+     <a href="#" class="btn btn-primary a-btn-slide-text">
+        <span class="glyphicon glyphicon-eye-open" ></span>
+        <span><strong>View</strong></span>            
+     </a>
+     <a href="#" class="btn btn-primary a-btn-slide-text">
+       <span class="glyphicon glyphicon-remove" ></span>
+        <span><strong>Delete</strong></span>            
+     </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>25</td>
+                  <td>Shanko</td>
+                  <td>London</td>
+                  <td>27</td>
+                  <td>Roma</td>
+                  <td>$145,000</td>
+                  <td>3365K</td>
+                  <td>
+                    <a href="#" class="btn btn-primary a-btn-slide-text">
+        <span class="glyphicon glyphicon-edit" ></span>
+        <span><strong>Edit</strong></span>            
+     </a>
+     <a href="#" class="btn btn-primary a-btn-slide-text">
+        <span class="glyphicon glyphicon-eye-open" ></span>
+        <span><strong>View</strong></span>            
+     </a>
+     <a href="#" class="btn btn-primary a-btn-slide-text">
+       <span class="glyphicon glyphicon-remove" ></span>
+        <span><strong>Delete</strong></span>            
+     </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>666</td>
+                  <td>Alejandro</td>
+                  <td>1</td>
+                  <td>22</td>
+                  <td>Cádiz</td>
+                  <td>SACOS SA</td>
+                  <td>$109,850</td>
+                  <td>
+                    <a href="#" class="btn btn-primary a-btn-slide-text">
+        <span class="glyphicon glyphicon-edit" ></span>
+        <span><strong>Edit</strong></span>            
+     </a>
+     <a href="#" class="btn btn-primary a-btn-slide-text">
+        <span class="glyphicon glyphicon-eye-open" ></span>
+        <span><strong>View</strong></span>            
+     </a>
+     <a href="#" class="btn btn-primary a-btn-slide-text">
+       <span class="glyphicon glyphicon-remove" ></span>
+        <span><strong>Delete</strong></span>            
+     </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>145</td>
+                  <td>Wang</td>
+                  <td>11</td>
+                  <td>46</td>
+                  <td>Pekin</td>
+                  <td>$324,050</td>
+                  <td>14854P</td>
+                  <td>
+                    <a href="#" class="btn btn-primary a-btn-slide-text">
+        <span class="glyphicon glyphicon-edit" ></span>
+        <span><strong>Edit</strong></span>            
+     </a>
+     <a href="#" class="btn btn-primary a-btn-slide-text">
+        <span class="glyphicon glyphicon-eye-open" ></span>
+        <span><strong>View</strong></span>            
+     </a>
+     <a href="#" class="btn btn-primary a-btn-slide-text">
+       <span class="glyphicon glyphicon-remove" ></span>
+        <span><strong>Delete</strong></span>            
+     </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>41</td>
+                  <td>Pabloo</td>
+                  <td>2</td>
+                  <td>47</td>
+                  <td>Ávila</td>
+                  <td>$85,675</td>
+                  <td>65899C</td>
+                  <td>
+                    <a href="#" class="btn btn-primary a-btn-slide-text">
+        <span class="glyphicon glyphicon-edit" ></span>
+        <span><strong>Edit</strong></span>            
+     </a>
+     <a href="#" class="btn btn-primary a-btn-slide-text">
+        <span class="glyphicon glyphicon-eye-open" ></span>
+        <span><strong>View</strong></span>            
+     </a>
+     <a href="#" class="btn btn-primary a-btn-slide-text">
+       <span class="glyphicon glyphicon-remove" ></span>
+        <span><strong>Delete</strong></span>            
+     </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>44</td>
+                  <td>Antia</td>
+                  <td>11</td>
+                  <td>51</td>
+                  <td>Cuenca</td>
+                  <td>$164,500</td>
+                  <td>14587P</td>
+                  <td>
+                    <a href="#" class="btn btn-primary a-btn-slide-text">
+        <span class="glyphicon glyphicon-edit" ></span>
+        <span><strong>Edit</strong></span>            
+     </a>
+     <a href="#" class="btn btn-primary a-btn-slide-text">
+        <span class="glyphicon glyphicon-eye-open" ></span>
+        <span><strong>View</strong></span>            
+     </a>
+     <a href="#" class="btn btn-primary a-btn-slide-text">
+       <span class="glyphicon glyphicon-remove" ></span>
+        <span><strong>Delete</strong></span>            
+     </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>32</td>
+                  <td>Angel</td>
+                  <td>2</td>
+                  <td>41</td>
+                  <td>Toledo</td>
+                  <td>EGEON</td>
+                  <td>54874A</td>
+                  <td>
+                    <a href="#" class="btn btn-primary a-btn-slide-text">
+        <span class="glyphicon glyphicon-edit" ></span>
+        <span><strong>Edit</strong></span>            
+     </a>
+     <a href="#" class="btn btn-primary a-btn-slide-text">
+        <span class="glyphicon glyphicon-eye-open" ></span>
+        <span><strong>View</strong></span>            
+     </a>
+     <a href="#" class="btn btn-primary a-btn-slide-text">
+       <span class="glyphicon glyphicon-remove" ></span>
+        <span><strong>Delete</strong></span>            
+     </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>95</td>
+                  <td>Javier</td>
+                  <td>32</td>
+                  <td>62</td>
+                  <td>Madrid</td>
+                  <td>MSL</td>
+                  <td>06569J</td>
+                  <td>
+                    <a href="#" class="btn btn-primary a-btn-slide-text">
+        <span class="glyphicon glyphicon-edit" ></span>
+        <span><strong>Edit</strong></span>            
+     </a>
+     <a href="#" class="btn btn-primary a-btn-slide-text">
+        <span class="glyphicon glyphicon-eye-open" ></span>
+        <span><strong>View</strong></span>            
+     </a>
+     <a href="#" class="btn btn-primary a-btn-slide-text">
+       <span class="glyphicon glyphicon-remove" ></span>
+        <span><strong>Delete</strong></span>            
+     </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>26</td>
+                  <td>Lucia</td>
+                  <td>4</td>
+                  <td>37</td>
+                  <td>Bilbao</td>
+                  <td>PATOS SA</td>
+                  <td>48756D</td>
+                  <td>
+                    <a href="#" class="btn btn-primary a-btn-slide-text">
+        <span class="glyphicon glyphicon-edit" ></span>
+        <span><strong>Edit</strong></span>            
+     </a>
+     <a href="#" class="btn btn-primary a-btn-slide-text">
+        <span class="glyphicon glyphicon-eye-open" ></span>
+        <span><strong>View</strong></span>            
+     </a>
+     <a href="#" class="btn btn-primary a-btn-slide-text">
+       <span class="glyphicon glyphicon-remove" ></span>
+        <span><strong>Delete</strong></span>            
+     </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>54</td>
+                  <td>Frank</td>
+                  <td>4</td>
+                  <td>65</td>
+                  <td>León</td>
+                  <td>egeÓN</td>
+                  <td>58972Z</td>
+                  <td>
+                    <a href="#" class="btn btn-primary a-btn-slide-text">
+        <span class="glyphicon glyphicon-edit" ></span>
+        <span><strong>Edit</strong></span>            
+     </a>
+     <a href="#" class="btn btn-primary a-btn-slide-text">
+        <span class="glyphicon glyphicon-eye-open" ></span>
+        <span><strong>View</strong></span>            
+     </a>
+     <a href="#" class="btn btn-primary a-btn-slide-text">
+       <span class="glyphicon glyphicon-remove" ></span>
+        <span><strong>Delete</strong></span>            
+     </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>52</td>
+                  <td>Raul Blanco</td>
+                  <td>8</td>
+                  <td>64</td>
+                  <td>Ceuta</td>
+                  <td>$234,500</td>
+                  <td>Aaaaaa</td>
+                  <td>
+                    <a href="#" class="btn btn-primary a-btn-slide-text">
+        <span class="glyphicon glyphicon-edit" ></span>
+        <span><strong>Edit</strong></span>            
+     </a>
+     <a href="#" class="btn btn-primary a-btn-slide-text">
+        <span class="glyphicon glyphicon-eye-open" ></span>
+        <span><strong>View</strong></span>            
+     </a>
+     <a href="#" class="btn btn-primary a-btn-slide-text">
+       <span class="glyphicon glyphicon-remove" ></span>
+        <span><strong>Delete</strong></span>            
+     </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>41</td>
+                  <td>Bruno Mars</td>
+                  <td>1</td>
+                  <td>38</td>
+                  <td>2011/05/03</td>
+                  <td>BREOGAN SL</td>
+                  <td>3320H</td>
+                  <td>
+                    <a href="#" class="btn btn-primary a-btn-slide-text">
+        <span class="glyphicon glyphicon-edit" ></span>
+        <span><strong>Edit</strong></span>            
+     </a>
+     <a href="#" class="btn btn-primary a-btn-slide-text">
+        <span class="glyphicon glyphicon-eye-open" ></span>
+        <span><strong>View</strong></span>            
+     </a>
+     <a href="#" class="btn btn-primary a-btn-slide-text">
+       <span class="glyphicon glyphicon-remove" ></span>
+        <span><strong>Delete</strong></span>            
+     </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>28</td>
+                  <td>Mickey</td>
+                  <td>4</td>
+                  <td>37</td>
+                  <td>2009/08/19</td>
+                  <td>$139,575</td>
+                  <td>$139,575</td>
+                  <td>
+                    <a href="#" class="btn btn-primary a-btn-slide-text">
+        <span class="glyphicon glyphicon-edit" ></span>
+        <span><strong>Edit</strong></span>            
+     </a>
+     <a href="#" class="btn btn-primary a-btn-slide-text">
+        <span class="glyphicon glyphicon-eye-open" ></span>
+        <span><strong>View</strong></span>            
+     </a>
+     <a href="#" class="btn btn-primary a-btn-slide-text">
+       <span class="glyphicon glyphicon-remove" ></span>
+        <span><strong>Delete</strong></span>            
+     </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>91</td>
+                  <td>Daniel Slim</td>
+                  <td>20</td>
+                  <td>61</td>
+                  <td>Lima</td>
+                  <td>$98,540</td>
+                  <td>2142587</td>
+                  <td>
+                    <a href="#" class="btn btn-primary a-btn-slide-text">
+        <span class="glyphicon glyphicon-edit" ></span>
+        <span><strong>Edit</strong></span>            
+     </a>
+     <a href="#" class="btn btn-primary a-btn-slide-text">
+        <span class="glyphicon glyphicon-eye-open" ></span>
+        <span><strong>View</strong></span>            
+     </a>
+     <a href="#" class="btn btn-primary a-btn-slide-text">
+       <span class="glyphicon glyphicon-remove" ></span>
+        <span><strong>Delete</strong></span>            
+     </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>05</td>
+                  <td>Teresaa</td>
+                  <td>1</td>
+                  <td>47</td>
+                  <td>Murcia</td>
+                  <td>$87,500</td>
+                  <td>0594879</td>
+                  <td>
+                    <a href="#" class="btn btn-primary a-btn-slide-text">
+        <span class="glyphicon glyphicon-edit" ></span>
+        <span><strong>Edit</strong></span>            
+     </a>
+     <a href="#" class="btn btn-primary a-btn-slide-text">
+        <span class="glyphicon glyphicon-eye-open" ></span>
+        <span><strong>View</strong></span>            
+     </a>
+     <a href="#" class="btn btn-primary a-btn-slide-text">
+       <span class="glyphicon glyphicon-remove" ></span>
+        <span><strong>Delete</strong></span>            
+     </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>32</td>
+                  <td>Charles Chaplin</td>
+                  <td>6</td>
+                  <td>64</td>
+                  <td>2012/04/09</td>
+                  <td>$138,575</td>
+                  <td>$183,000</td>
+                  <td>
+                    <a href="#" class="btn btn-primary a-btn-slide-text">
+        <span class="glyphicon glyphicon-edit" ></span>
+        <span><strong>Edit</strong></span>            
+     </a>
+     <a href="#" class="btn btn-primary a-btn-slide-text">
+        <span class="glyphicon glyphicon-eye-open" ></span>
+        <span><strong>View</strong></span>            
+     </a>
+     <a href="#" class="btn btn-primary a-btn-slide-text">
+       <span class="glyphicon glyphicon-remove" ></span>
+        <span><strong>Delete</strong></span>            
+     </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>57</td>
+                  <td>Andrés Guerra</td>
+                  <td>20</td>
+                  <td>63</td>
+                  <td>2010/01/04</td>
+                  <td>$125,250</td>
+                  <td>bbbbb</td>
+                  <td>
+                    <a href="#" class="btn btn-primary a-btn-slide-text">
+        <span class="glyphicon glyphicon-edit" ></span>
+        <span><strong>Edit</strong></span>            
+     </a>
+     <a href="#" class="btn btn-primary a-btn-slide-text">
+        <span class="glyphicon glyphicon-eye-open" ></span>
+        <span><strong>View</strong></span>            
+     </a>
+     <a href="#" class="btn btn-primary a-btn-slide-text">
+       <span class="glyphicon glyphicon-remove" ></span>
+        <span><strong>Delete</strong></span>            
+     </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>021</td>
+                  <td>Javier Merchan</td>
+                  <td>4</td>
+                  <td>56</td>
+                  <td>Oporto</td>
+                  <td>$115,000</td>
+                  <td>$183,000</td>
+                  <td>
+                    <a href="#" class="btn btn-primary a-btn-slide-text">
+        <span class="glyphicon glyphicon-edit" ></span>
+        <span><strong>Edit</strong></span>            
+     </a>
+     <a href="#" class="btn btn-primary a-btn-slide-text">
+        <span class="glyphicon glyphicon-eye-open" ></span>
+        <span><strong>View</strong></span>            
+     </a>
+     <a href="#" class="btn btn-primary a-btn-slide-text">
+       <span class="glyphicon glyphicon-remove" ></span>
+        <span><strong>Delete</strong></span>            
+     </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>111</td>
+                  <td>Clara Serra</td>
+                  <td>5</td>
+                  <td>43</td>
+                  <td>Cuenca</td>
+                  <td>AGROSSS</td>
+                  <td>2455K</td>
+                  <td>
+                    <a href="#" class="btn btn-primary a-btn-slide-text">
+        <span class="glyphicon glyphicon-edit" ></span>
+        <span><strong>Edit</strong></span>            
+     </a>
+     <a href="#" class="btn btn-primary a-btn-slide-text">
+        <span class="glyphicon glyphicon-eye-open" ></span>
+        <span><strong>View</strong></span>            
+     </a>
+     <a href="#" class="btn btn-primary a-btn-slide-text">
+       <span class="glyphicon glyphicon-remove" ></span>
+        <span><strong>Delete</strong></span>            
+     </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>62</td>
+                  <td>Sales Assistant</td>
+                  <td>New York</td>
+                  <td>46</td>
+                  <td>2011/12/06</td>
+                  <td>$145,600</td>
+                  <td>$183,000</td>
+                  <td>
+                    <a href="#" class="btn btn-primary a-btn-slide-text">
+        <span class="glyphicon glyphicon-edit" ></span>
+        <span><strong>Edit</strong></span>            
+     </a>
+     <a href="#" class="btn btn-primary a-btn-slide-text">
+        <span class="glyphicon glyphicon-eye-open" ></span>
+        <span><strong>View</strong></span>            
+     </a>
+     <a href="#" class="btn btn-primary a-btn-slide-text">
+       <span class="glyphicon glyphicon-remove" ></span>
+        <span><strong>Delete</strong></span>            
+     </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>34</td>
+                  <td>Alejandro</td>
+                  <td>8</td>
+                  <td>47</td>
+                  <td>Cantabria</td>
+                  <td>$356,250</td>
+                  <td>13</td>
+                  <td>
+                    <a href="#" class="btn btn-primary a-btn-slide-text">
+        <span class="glyphicon glyphicon-edit" ></span>
+        <span><strong>Edit</strong></span>            
+     </a>
+     <a href="#" class="btn btn-primary a-btn-slide-text">
+        <span class="glyphicon glyphicon-eye-open" ></span>
+        <span><strong>View</strong></span>            
+     </a>
+     <a href="#" class="btn btn-primary a-btn-slide-text">
+       <span class="glyphicon glyphicon-remove" ></span>
+        <span><strong>Delete</strong></span>            
+     </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>65</td>
+                  <td>Ana</td>
+                  <td>65</td>
+                  <td>21</td>
+                  <td>2009/02/27</td>
+                  <td>$103,500</td>
+                  <td>ccccggfv</td>
+                  <td>
+                    <a href="#" class="btn btn-primary a-btn-slide-text">
+        <span class="glyphicon glyphicon-edit" ></span>
+        <span><strong>Edit</strong></span>            
+     </a>
+     <a href="#" class="btn btn-primary a-btn-slide-text">
+        <span class="glyphicon glyphicon-eye-open" ></span>
+        <span><strong>View</strong></span>            
+     </a>
+     <a href="#" class="btn btn-primary a-btn-slide-text">
+       <span class="glyphicon glyphicon-remove" ></span>
+        <span><strong>Delete</strong></span>            
+     </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>56</td>
+                  <td>Developer</td>
+                  <td>San Francisco</td>
+                  <td>30</td>
+                  <td>2010/07/14</td>
+                  <td>$86,500</td>
+                  <td>$183,000</td>
+                  <td>
+                    <a href="#" class="btn btn-primary a-btn-slide-text">
+        <span class="glyphicon glyphicon-edit" ></span>
+        <span><strong>Edit</strong></span>            
+     </a>
+     <a href="#" class="btn btn-primary a-btn-slide-text">
+        <span class="glyphicon glyphicon-eye-open" ></span>
+        <span><strong>View</strong></span>            
+     </a>
+     <a href="#" class="btn btn-primary a-btn-slide-text">
+       <span class="glyphicon glyphicon-remove" ></span>
+        <span><strong>Delete</strong></span>            
+     </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>9</td>
+                  <td>Regional Director</td>
+                  <td>Edinburgh</td>
+                  <td>51</td>
+                  <td>2008/11/13</td>
+                  <td>$183,000</td>
+                  <td>$183,000</td>
+                  <td>
+                    <a href="#" class="btn btn-primary a-btn-slide-text">
+        <span class="glyphicon glyphicon-edit" ></span>
+        <span><strong>Edit</strong></span>            
+     </a>
+     <a href="#" class="btn btn-primary a-btn-slide-text">
+        <span class="glyphicon glyphicon-eye-open" ></span>
+        <span><strong>View</strong></span>            
+     </a>
+     <a href="#" class="btn btn-primary a-btn-slide-text">
+       <span class="glyphicon glyphicon-remove" ></span>
+        <span><strong>Delete</strong></span>            
+     </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>55</td>
+                  <td>Jaime </td>
+                  <td>2</td>
+                  <td>29</td>
+                  <td>2011/06/27</td>
+                  <td>$183,000</td>
+                  <td>$183,000</td>
+                  <td>
+                    <a href="#" class="btn btn-primary a-btn-slide-text">
+        <span class="glyphicon glyphicon-edit" ></span>
+        <span><strong>Edit</strong></span>            
+     </a>
+     <a href="#" class="btn btn-primary a-btn-slide-text">
+        <span class="glyphicon glyphicon-eye-open" ></span>
+        <span><strong>View</strong></span>            
+     </a>
+     <a href="#" class="btn btn-primary a-btn-slide-text">
+       <span class="glyphicon glyphicon-remove" ></span>
+        <span><strong>Delete</strong></span>            
+     </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Donna Snider</td>
+                  <td>Customer Support</td>
+                  <td>New York</td>
+                  <td>27</td>
+                  <td>2011/01/25</td>
+                  <td>$112,000</td>
+                  <td>$183,000</td>
+                  <td>
+                    <a href="#" class="btn btn-primary a-btn-slide-text">
+        <span class="glyphicon glyphicon-edit" ></span>
+        <span><strong>Edit</strong></span>            
+     </a>
+     <a href="#" class="btn btn-primary a-btn-slide-text">
+        <span class="glyphicon glyphicon-eye-open" ></span>
+        <span><strong>View</strong></span>            
+     </a>
+     <a href="#" class="btn btn-primary a-btn-slide-text">
+       <span class="glyphicon glyphicon-remove" ></span>
+        <span><strong>Delete</strong></span>            
+     </a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
+      </div>
+    </div>
+    <!-- /.container-fluid-->
+    <!-- /.content-wrapper-->
+    <footer class="sticky-footer">
+      <div class="container">
+        <div class="text-center">
+          <small>Copyright © Your Website 2017</small>
+        </div>
+      </div>
+    </footer>
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top">
+      <i class="fa fa-angle-up"></i>
+    </a>
+    <!-- Logout Modal-->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+          <div class="modal-footer">
+            <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+            <a class="btn btn-primary" href="login.html">Logout</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Bootstrap core JavaScript-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Core plugin JavaScript-->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <!-- Page level plugin JavaScript-->
+    <script src="vendor/datatables/jquery.dataTables.js"></script>
+    <script src="vendor/datatables/dataTables.bootstrap4.js"></script>
+    <!-- Custom scripts for all pages-->
+    <script src="js/sb-admin.min.js"></script>
+    <!-- Custom scripts for this page-->
+    <script src="js/sb-admin-datatables.min.js"></script>
+  </div>
+</body>
+
+</html>
