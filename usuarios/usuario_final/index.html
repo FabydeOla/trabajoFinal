@@ -16,7 +16,7 @@
   <link href="vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
   <!-- Custom styles for this template-->
   <link href="css/sb-admin.css" rel="stylesheet">
-  <link href="css/custom.css" rel="stylesheet">
+<!-- <link href="css/custom.css" rel="stylesheet">// -->
 
   <link rel="shortcut icon" href="img/favicon.png">
 </head>
@@ -39,26 +39,21 @@
             <span class="nav-link-text" style=" color:grey" >Resumen</span>
           </a>
         </li>
-        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Mi Pérfil">
-          <a class="nav-link" href="Miperfil.html">
-            <i class="fa fa-fw fa-area-chart" style=" color:#94c045"></i>
-            <span class="nav-link-text" style=" color:grey">Mi Pérfil</span>
-          </a>
-        </li>
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Plan de Riego">
           <a class="nav-link" href="Planderiego.html">
             <i class="fa fa-fw fa-table" style=" color:#94c045"></i>
             <span class="nav-link-text" style=" color: grey">Plan de Riego</span>
           </a>
         </li>
-        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Components">
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Mi perfil">
           <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseComponents" data-parent="#exampleAccordion">
-            <i class="fa fa-fw fa-wrench" style=" color:#94c045"></i>
-            <span class="nav-link-text" style=" color: grey">Documentos</span>
+            <i class="fa fa-user" style=" color:#94c045"></i>
+            <span class="nav-link-text" style=" color: grey">Mi perfil</span>
           </a>
           <ul class="sidenav-second-level collapse" id="collapseComponents">
             <li>
               <a href="Facturas.html">Facturas</a>
+              <a href="Userprofile.html" style=" color:#94c045">Configuración</a>
             </li>
           </ul>
         </li>
@@ -195,67 +190,43 @@
       <!-- Icon Cards-->
       <div class="row">
         <div class="col-xl-3 col-sm-6 mb-3">
-          <div class="card text-white bg-primary o-hidden h-100">
+          <div class="card text-grey o-hidden h-100">
             <div class="card-body">
               <div class="card-body-icon">
-                <i class="fa fa-fw fa-comments"></i>
+                <i class="fa fa-tint" aria-hidden="true"></i>
               </div>
-              <div class="mr-5">26 Nuevos Mensajes!</div>
+              <div class="mr-5" data-toggle="tooltip" data-placement="top" title="Humedad actual">86%</div>
             </div>
-            <a class="card-footer text-white clearfix small z-1" href="#">
-              <span class="float-left">Ver Detalles</span>
-              <span class="float-right">
-                <i class="fa fa-angle-right"></i>
-              </span>
-            </a>
           </div>
         </div>
         <div class="col-xl-3 col-sm-6 mb-3">
-          <div class="card text-white bg-warning o-hidden h-100">
+          <div class="card text-grey  o-hidden h-100">
             <div class="card-body">
               <div class="card-body-icon">
-                <i class="fa fa-fw fa-list"></i>
+                <i class="fa fa-history"></i>
               </div>
-              <div class="mr-5">11 Nuevas Actividades!</div>
+              <div class="mr-5" data-toggle="tooltip" data-placement="top" title="Último riego"> 12:46 <br> 03/09/2019 <br> 6,7 l</div>
             </div>
-            <a class="card-footer text-white clearfix small z-1" href="#">
-              <span class="float-left">Ver Detalles</span>
-              <span class="float-right">
-                <i class="fa fa-angle-right"></i>
-              </span>
-            </a>
           </div>
         </div>
         <div class="col-xl-3 col-sm-6 mb-3">
-          <div class="card text-white bg-success o-hidden h-100">
+          <div class="card text-grey o-hidden h-100">
             <div class="card-body">
               <div class="card-body-icon">
-                <i class="fa fa-fw fa-shopping-cart"></i>
+                <i class="fa fa-sliders"></i>
               </div>
-              <div class="mr-5">12 Nuevas Órdenes!</div>
+              <div class="mr-5" data-toggle="tooltip" data-placement="top" title="Zonas de riego">3 Zonas configuradas</div>
             </div>
-            <a class="card-footer text-white clearfix small z-1" href="#">
-              <span class="float-left">Ver Detalles</span>
-              <span class="float-right">
-                <i class="fa fa-angle-right"></i>
-              </span>
-            </a>
           </div>
         </div>
         <div class="col-xl-3 col-sm-6 mb-3">
-          <div class="card text-white bg-danger o-hidden h-100">
+          <div class="card text-grey o-hidden h-100">
             <div class="card-body">
               <div class="card-body-icon">
-                <i class="fa fa-fw fa-support"></i>
+                <i class="fa fa-video-camera"></i>
               </div>
-              <div class="mr-5">13 Nuevos Tickets!</div>
+              <div class="mr-5" data-toggle="tooltip" data-placement="top" title="Activar WEBCAM">GreeningCAM</div>
             </div>
-            <a class="card-footer text-white clearfix small z-1" href="#">
-              <span class="float-left">Ver Detalles</span>
-              <span class="float-right">
-                <i class="fa fa-angle-right"></i>
-              </span>
-            </a>
           </div>
         </div>
       </div>
@@ -462,21 +433,9 @@
         </div>
       </div>
     </div>
-    <!-- Bootstrap core JavaScript-->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <!-- Core plugin JavaScript-->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-    <!-- Page level plugin JavaScript-->
-    <script src="vendor/chart.js/Chart.min.js"></script>
-    <script src="vendor/datatables/jquery.dataTables.js"></script>
-    <script src="vendor/datatables/dataTables.bootstrap4.js"></script>
-    <!-- Custom scripts for all pages-->
-    <script src="js/sb-admin.min.js"></script>
-    <!-- Custom scripts for this page-->
-    <script src="js/sb-admin-datatables.min.js"></script>
-    <script src="js/sb-admin-charts.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   </div>
 </body>
-
 </html>
