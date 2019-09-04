@@ -33,19 +33,19 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarResponsive">
       <ul class="navbar-nav navbar-sidenav" id="exampleAccordion">
-        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Resumen">
+        <li class="nav-item" data-toggle="tooltip" data-placement="top" title="Resumen">
           <a class="nav-link" href="index.html">
             <i class="fa fa-fw fa-dashboard" style=" color:#94c045"></i>
             <span class="nav-link-text" style=" color:grey" >Resumen</span>
           </a>
         </li>
-        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Plan de Riego">
+        <li class="nav-item" data-toggle="tooltip" data-placement="top" title="Plan de Riego">
           <a class="nav-link" href="Planderiego.html">
             <i class="fa fa-fw fa-table" style=" color:#94c045"></i>
             <span class="nav-link-text" style=" color: grey">Plan de Riego</span>
           </a>
         </li>
-        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Mi perfil">
+        <li class="nav-item" data-toggle="tooltip" data-placement="" title="Mi perfil">
           <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseComponents" data-parent="#exampleAccordion">
             <i class="fa fa-user" style=" color:#94c045"></i>
             <span class="nav-link-text" style=" color: grey">Mi perfil</span>
@@ -236,6 +236,16 @@
           <i class="fa fa-area-chart"></i> Evolución de Agua Consumida</div>
         <div class="card-body">
           <canvas id="myAreaChart" width="100%" height="30"></canvas>
+          <div class="card-body"><div class="chartjs-size-monitor">
+            <div class="chartjs-size-monitor-expand">
+              <div class=""></div>
+            </div>
+            <div class="chartjs-size-monitor-shrink">
+              <div class=""></div>
+            </div>
+          </div>
+            <canvas id="myAreaChart" width="966" height="289" class="chartjs-render-monitor" style="display: block; width: 966px; height: 289px;"></canvas>
+          </div>
         </div>
         <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
       </div>
@@ -436,6 +446,10 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script>
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+    })</script>
   </div>
 </body>
 </html>
